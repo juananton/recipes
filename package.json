@@ -1,10 +1,11 @@
 {
   "name": "recipes",
   "version": "1.0.0",
+  "default": "index.html",
   "description": "Recipe application",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parel build index.html"
+    "build": "parel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/juananton/recipes#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "fracty": "^1.0.9"
   }
 }
